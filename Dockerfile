@@ -12,17 +12,19 @@ ENV SINUS_USER="sinusbot" \
     TS3_VERSION="3.0.19.4" \
     TS3_OFFSET="25000"
 	
-ARG BUILD_DATE
-ARG VCS_REF
-LABEL org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.docker.dockerfile="/Dockerfile" \
-      org.label-schema.license="MIT" \
-      org.label-schema.name="Docker Sinusbot" \
-      org.label-schema.url="https://github.com/asosgaming/sinusbot/" \
-      org.label-schema.vcs-url="https://github.com/asosgaming/sinusbot.git" \
-      org.label-schema.vcs-type="Git" \
-	  org.label-schema.vendor="ASoS Gaming" \
-      org.label-schema.schema-version="1.0"
+    # Build-time metadata as defined at http://label-schema.org
+    ARG BUILD_DATE
+    ARG VCS_REF
+    ARG VERSION
+    LABEL org.label-schema.build-date=$BUILD_DATE \
+          org.label-schema.name="Sinusbot" \
+          org.label-schema.description="Latest Version of Sinusbot and Teamspeak 3 Client" \
+          org.label-schema.url="https://github.com/asosgaming/sinusbot/" \
+          org.label-schema.vcs-ref=$VCS_REF \
+          org.label-schema.vcs-url="https://github.com/asosgaming/sinusbot.git" \
+          org.label-schema.vendor="ASoS Gaming" \
+          org.label-schema.version=$VERSION \
+          org.label-schema.schema-version="1
 	
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh && \
