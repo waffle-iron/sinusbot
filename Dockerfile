@@ -19,11 +19,9 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.license="MIT" \
       org.label-schema.name="Docker Sinusbot" \
       org.label-schema.url="https://github.com/asosgaming/sinusbot/" \
-      org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/asosgaming/sinusbot.git" \
       org.label-schema.vcs-type="Git" \
 	  org.label-schema.vendor="ASoS Gaming" \
-      org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
 	
 ADD entrypoint.sh /entrypoint.sh
