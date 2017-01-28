@@ -9,15 +9,13 @@ TeamSpeak 3 SinusBot Homepage: https://frie.se/ts3bot/
 
 * Installation Instuctions
 
-** More Information will be added later.
+*      More Information will be added later.
 
 
 ------------------------UPDATES---------------------------
 
-
--Completed Update of TS3 Client to v. 3.1.0.1
--Completed Updatge of Sinusbot to latest Linux Beta Build.
-
+Completed Update of TS3 Client to v. 3.1.0.1
+Completed Updatge of Sinusbot to latest Linux Beta Build.
 
 ----------------------------------------------------------
 
