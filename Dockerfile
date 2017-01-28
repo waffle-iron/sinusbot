@@ -11,6 +11,21 @@ ENV SINUS_USER="sinusbot" \
     YTDL_VERSION="latest" \
     TS3_VERSION="3.0.19.4" \
     TS3_OFFSET="25000"
+	
+ARG BUILD_DATE
+ARG VCS_REF
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.docker.dockerfile="/sinusbot" \
+      org.label-schema.license="MIT" \
+      org.label-schema.name="Docker Sinusbot" \
+      org.label-schema.url="https://github.com/asosgaming/sinusbot/" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/asosgaming/sinusbot.git" \
+      org.label-schema.vcs-type="Git" \
+	  org.label-schema.vendor="ASoS Gaming" \
+      org.label-schema.version=$VERSION \
+      org.label-schema.schema-version="1.0"
+	
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh && \
     apt-get -q update && \
