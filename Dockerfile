@@ -15,7 +15,7 @@ ENV SINUS_USER="sinusbot" \
 ARG BUILD_DATE
 ARG VCS_REF
 LABEL org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.docker.dockerfile="/sinusbot" \
+      org.label-schema.docker.dockerfile="/Dockerfile" \
       org.label-schema.license="MIT" \
       org.label-schema.name="Docker Sinusbot" \
       org.label-schema.url="https://github.com/asosgaming/sinusbot/" \
