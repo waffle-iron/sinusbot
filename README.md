@@ -14,6 +14,7 @@ TeamSpeak 3 SinusBot Homepage: https://www.sinusbot.com/
 
 ------------------------UPDATES---------------------------
 
+Added Tag for Version 1.0.0.5
 Instituting Changes to allow for Docker Image Tags in build environment.
 Completed Update of TS3 Client to v. 3.1.0.1
 Completed Updatge of Sinusbot to latest Linux Beta Build.
