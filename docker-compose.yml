@@ -1,6 +1,6 @@
 sinusbot:
         restart: always
-        image: asos/sinusbot:l1.0.0.5
+        image: asos/sinusbot:1.0.0.5
         container_name: sinusbot-1.0.0.5
         ports:
             - "8087:8087"
