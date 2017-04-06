@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/asosgaming/sinusbot.png?label=ready&title=Ready)](https://waffle.io/asosgaming/sinusbot)
 ## SinusBot TeamSpeak 3 Docker Image
 
 
